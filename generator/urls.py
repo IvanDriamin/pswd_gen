@@ -18,8 +18,9 @@ from django.urls import include, path
 
 from generator import views
 
-app_name = 'gen'
+app_name = 'generator'
 
 urlpatterns = [
     path('', views.index, name = 'index'),
+    path('about/', views.about, name = 'about'),
 ]
