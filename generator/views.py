@@ -14,5 +14,8 @@ def index(request):
         thepassword += random.choice(liters)
     return render(request, 'generator1/index.html', {'password':thepassword})
 
+def password(request):
+    return render(request, 'generator1/password.html')
+
 def about(request):
     return render(request, 'generator1/about.html')

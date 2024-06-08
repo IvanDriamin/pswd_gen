@@ -23,4 +23,5 @@ app_name = 'generator'
 urlpatterns = [
     path('', views.index, name = 'index'),
     path('about/', views.about, name = 'about'),
+    path('password/', views.password, name = 'password'),
 ]
